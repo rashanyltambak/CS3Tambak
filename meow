@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>codingrizz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    #meowMessage {
+      display: none;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    #meow {
+      display: none;
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>hi</h1>
+
+  <button onclick="revealMeow()">click me</button>
+
+  <p id="meowMessage">Just wanna let you know🤭🤭</p>
+
+  <img id="meow" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQK2etQ8qD_OdiDiFhMKCyiZfUjY5Yw2jMUau2PdmzWez7QeLSY7uMXPXuGC3tvvHzxYk&usqp=CAU"
+    alt="meowmeow">
+
+  <script>
+    function revealMeow() {
+      const meowMessage = document.getElementById('meowMessage');
+      const meowImage = document.getElementById('meow');
+
+
+      setTimeout(() => {
+        meowMessage.style.display = 'block';
+      }, 1000);
+
+ 
+      setTimeout(() => {
+        meowImage.style.display = 'block';
+      }, 2000);
+    }
+  </script>
+</body>
+
+</html>
